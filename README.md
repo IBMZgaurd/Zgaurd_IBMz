@@ -82,4 +82,4 @@ Unverified until run and recorded: see `docs/linuxone.md`.
 
 Branch protection, CODEOWNERS, issue templates, Dependabot, containers, s390x smoke test in CI.
 
-License: MIT.
+License: Apache.
