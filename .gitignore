@@ -13,7 +13,6 @@ env/
 # Tooling caches
 .pytest_cache/
 .ruff_cache/
-.mypy_cache/
 .coverage
 htmlcov/
 
@@ -22,15 +21,14 @@ htmlcov/
 .env.*
 !.env.example
 
-# Logs (real logs must never be committed)
+# Real logs must never be committed
 *.log
+!examples/*.log
+!tests/fixtures/*.log
 
-# ZGuard generated and local output
+# Generated locally (regenerate with: python scripts/reproduce.py)
 data/generated/
 out/
-results/
-!examples/
-!models/
 
 # Editors and OS files
 .vscode/

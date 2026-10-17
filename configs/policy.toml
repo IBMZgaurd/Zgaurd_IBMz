@@ -1,0 +1,19 @@
+# ZGuard policy: the only component that decides ALLOW or BLOCK.
+# Thresholds below are defaults. Re-tune on the VALIDATION set (scripts/train.py prints
+# suggestions), then freeze them BEFORE running scripts/evaluate.py on the test set.
+mode = "standard"
+auto_mask = ["API_KEY", "EMAIL", "IPV4", "USER_ID"]
+ml_review_threshold = 0.5
+ml_high_risk_threshold = 0.85
+
+[severity]
+API_KEY = "high"
+EMAIL = "medium"
+IPV4 = "low"
+USER_ID = "low"
+
+[decision]
+# Any UNRESOLVED finding (not masked) at one of these severities -> BLOCK.
+# ML findings have no span, so they can never be masked: score >= high threshold is "high",
+# score >= review threshold is "medium".
+block_on = ["high"]

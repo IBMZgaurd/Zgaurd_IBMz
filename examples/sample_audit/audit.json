@@ -1,0 +1,93 @@
+{
+  "zguard_version": "0.1.0",
+  "generated_at": "2026-10-17T13:13:33+00:00",
+  "input_file": "sample_input.log",
+  "input_sha256": "8c77b7121ce6ab55a952cfd3a0e57acd0f29bbf839182f38601fb3524a7a6c7d",
+  "lines_scanned": 10,
+  "policy_mode": "standard",
+  "ml_enabled": true,
+  "model_sha256": "c85b1aa70bcf641d89d4cb7713f86bc74617c98b4cd5c34592ac2199f5a22c43",
+  "decision": "ALLOW",
+  "reasons": [],
+  "counts_by_type": {
+    "EMAIL": 1,
+    "IPV4": 2,
+    "API_KEY": 2,
+    "USER_ID": 2
+  },
+  "counts_by_source": {
+    "rule": 7
+  },
+  "findings": [
+    {
+      "line": 2,
+      "type": "EMAIL",
+      "source": "rule",
+      "severity": "medium",
+      "action": "masked",
+      "preview": "[REDACTED:EMAIL]",
+      "fingerprint": "24f0c5e7e4e1",
+      "score": null
+    },
+    {
+      "line": 3,
+      "type": "IPV4",
+      "source": "rule",
+      "severity": "low",
+      "action": "masked",
+      "preview": "[REDACTED:IPV4]",
+      "fingerprint": "ee01f8817a29",
+      "score": null
+    },
+    {
+      "line": 4,
+      "type": "API_KEY",
+      "source": "rule",
+      "severity": "high",
+      "action": "masked",
+      "preview": "[REDACTED:API_KEY]",
+      "fingerprint": "a3cf84dc4d6d",
+      "score": null
+    },
+    {
+      "line": 5,
+      "type": "USER_ID",
+      "source": "rule",
+      "severity": "low",
+      "action": "masked",
+      "preview": "[REDACTED:USER_ID]",
+      "fingerprint": "10f00bddbab9",
+      "score": null
+    },
+    {
+      "line": 6,
+      "type": "USER_ID",
+      "source": "rule",
+      "severity": "low",
+      "action": "masked",
+      "preview": "[REDACTED:USER_ID]",
+      "fingerprint": "222b3640e6f4",
+      "score": null
+    },
+    {
+      "line": 6,
+      "type": "IPV4",
+      "source": "rule",
+      "severity": "low",
+      "action": "masked",
+      "preview": "[REDACTED:IPV4]",
+      "fingerprint": "22a1148340ee",
+      "score": null
+    },
+    {
+      "line": 7,
+      "type": "API_KEY",
+      "source": "rule",
+      "severity": "high",
+      "action": "masked",
+      "preview": "[REDACTED:API_KEY]",
+      "fingerprint": "4fbae6420256",
+      "score": null
+    }
+  ]
+}

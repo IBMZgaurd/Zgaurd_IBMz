@@ -1,0 +1,14 @@
+# Strict mode: lower ML thresholds, and medium-risk ML lines also BLOCK the export.
+mode = "strict"
+auto_mask = ["API_KEY", "EMAIL", "IPV4", "USER_ID"]
+ml_review_threshold = 0.4
+ml_high_risk_threshold = 0.7
+
+[severity]
+API_KEY = "high"
+EMAIL = "medium"
+IPV4 = "low"
+USER_ID = "low"
+
+[decision]
+block_on = ["high", "medium"]

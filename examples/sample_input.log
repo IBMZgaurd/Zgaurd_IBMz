@@ -1,0 +1,10 @@
+2026-03-02T09:14:01Z INFO auth-svc request completed status=200 duration_ms=183
+2026-03-02T09:14:02Z INFO auth-svc password reset email sent to jane.doe42@example.com
+2026-03-02T09:14:05Z WARN gateway failed login from 203.0.113.77 after 4 tries
+2026-03-02T09:14:07Z ERROR billing credential rejected: zgk_test_Ab3dEf6hIj9kLm2nOp5qRs8t
+2026-03-02T09:14:09Z INFO search profile updated user_id=U482913 fields=2
+{"ts":"2026-03-02T09:14:11Z","svc":"gateway","event":"login","user_id":"U654321","ip":"198.51.100.23"}
+2026-03-02T09:14:15Z DEBUG gateway header Authorization: Bearer Ab3dEf6hIj9kLm2nOp5qRs8tUv1wXy4z
+2026-03-02T09:14:20Z INFO inventory deployed version 2.14.1 build 00a3f
+2026-03-02T09:14:21Z INFO notify token bucket refill rate set to 50 per second
+2026-03-02T09:14:22Z INFO report-job batch job job-4821 finished rows=14463

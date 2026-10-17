@@ -1,0 +1,105 @@
+{
+  "policy_mode": "standard",
+  "thresholds": [
+    0.5,
+    0.85
+  ],
+  "test_lines": 400,
+  "line_level": {
+    "rules_only": {
+      "tp": 82,
+      "fp": 0,
+      "fn": 72,
+      "tn": 246,
+      "precision": 1.0,
+      "recall": 0.5325,
+      "f1": 0.6949,
+      "fpr": 0.0
+    },
+    "ml_only": {
+      "tp": 154,
+      "fp": 0,
+      "fn": 0,
+      "tn": 246,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0
+    },
+    "hybrid": {
+      "tp": 154,
+      "fp": 0,
+      "fn": 0,
+      "tn": 246,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0
+    }
+  },
+  "span_level": {
+    "per_type": {
+      "EMAIL": {
+        "gold": 45,
+        "caught": 30,
+        "exact": 30
+      },
+      "API_KEY": {
+        "gold": 61,
+        "caught": 33,
+        "exact": 33
+      },
+      "IPV4": {
+        "gold": 37,
+        "caught": 23,
+        "exact": 23
+      },
+      "USER_ID": {
+        "gold": 20,
+        "caught": 20,
+        "exact": 20
+      },
+      "SECRET": {
+        "gold": 15,
+        "caught": 0,
+        "exact": 0
+      }
+    },
+    "gold_spans": 178,
+    "redaction_misses_by_rules": 72,
+    "residual_lines": 72,
+    "residual_lines_flagged_for_review_by_ml": 72,
+    "residual_lines_that_trigger_block_by_ml": 72
+  },
+  "end_to_end_policy": {
+    "rules_only": {
+      "full_test_file": "ALLOW",
+      "full_test_blocking_findings": 0,
+      "clean_subset_file": "ALLOW",
+      "clean_subset_blocking_findings": 0
+    },
+    "hybrid": {
+      "full_test_file": "BLOCK",
+      "full_test_blocking_findings": 72,
+      "clean_subset_file": "ALLOW",
+      "clean_subset_blocking_findings": 0
+    }
+  },
+  "throughput": {
+    "lines": 5000,
+    "rules_only_seconds": 0.13,
+    "hybrid_seconds": 0.59,
+    "hybrid_lines_per_second": 8431,
+    "target_100k_lines_under_60s_met": false
+  },
+  "hardware": {
+    "machine": "s390x",
+    "processor": "s390x",
+    "system": "Linux-6.8.0-124-generic-s390x-with-glibc2.39",
+    "python": "3.12.3",
+    "sklearn": "1.4.1.post1",
+    "numpy": "1.26.4",
+    "byteorder": "big",
+    "model_sha256": "4f63a6973d568d6b51778572a2ea9057faff7172b6533c7cd98722c0521016fd"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "n_train": 1500,
+  "n_val": 400,
+  "sha256": "4f63a6973d568d6b51778572a2ea9057faff7172b6533c7cd98722c0521016fd",
+  "suggested_thresholds_from_validation": {
+    "ml_review_threshold": 0.35,
+    "ml_high_risk_threshold": 0.5
+  },
+  "python": "3.12.3",
+  "sklearn": "1.4.1.post1",
+  "numpy": "1.26.4",
+  "machine": "s390x",
+  "byteorder": "big"
+}

@@ -1,0 +1,8 @@
+# Synthetic fake keys (zgk_test_...) live in tests, examples and the generator.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Synthetic test fixtures only"
+regexes = ['''zgk_test_[A-Za-z0-9]+''']
+paths = ['''tests/.*''', '''examples/.*''', '''src/zguard/synth\.py''']
